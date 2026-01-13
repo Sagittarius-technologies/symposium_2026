@@ -109,7 +109,7 @@ const EventModal = ({ event, onClose }: EventModalProps) => {
         {/* Action Button */}
         <div className="pt-4 border-t border-border">
           <Button variant="cta" className="w-full" asChild>
-            <a href={event.paymentLink} target='blank'>
+            <a href={event.paymentLink} target='_blank' rel='noopener noreferrer'>
               Register via Google Form
             </a>
           </Button>
