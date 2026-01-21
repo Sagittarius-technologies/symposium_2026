@@ -48,7 +48,7 @@ const CountdownTimer = ({ targetDate }: CountdownTimerProps) => {
         {timeBlocks.map((block) => (
           <div
             key={block.label}
-            className="flex flex-col items-center bg-primary-foreground/10 backdrop-blur-sm rounded-lg p-3 md:p-4 min-w-[60px] md:min-w-[80px] border border-primary-foreground/20"
+            className="flex flex-col items-center bg-orange-500 backdrop-blur-sm rounded-lg p-3 md:p-4 min-w-[60px] md:min-w-[80px] border border-primary-foreground/20"
           >
             <span className="text-2xl md:text-4xl font-bold text-primary-foreground tabular-nums">
               {block.value.toString().padStart(2, '0')}

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const Header: React.FC = () => {
@@ -7,12 +8,13 @@ const Header: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState<string>("");
   const menuRef = useRef<HTMLDivElement | null>(null);
+  const location = useLocation();
 
   const navLinks = [
-    { href: "#events", label: "Events" },
-    { href: "#register", label: "Register" },
-    { href: "#faq", label: "FAQ" },
-    { href: "#contact", label: "Contact" },
+    { href: "/", label: "Home", isRoute: true },
+    { href: "/events", label: "Events", isRoute: true },
+    { href: "/faq", label: "FAQ", isRoute: true },
+    { href: "#contact", label: "Contact", isRoute: false },
   ];
 
   // Header shadow on scroll
@@ -50,18 +52,17 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${scrolled
           ? "bg-white shadow-md border-gray-200"
           : "bg-white border-transparent"
-      }`}
+        }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-14 md:h-16">
 
           {/* Brand */}
-          <a
-            href="#"
+          <Link
+            to="/"
             className="flex items-center gap-3 focus-ring rounded-lg"
             aria-label="Techazura home"
             onClick={() => {
@@ -75,19 +76,46 @@ const Header: React.FC = () => {
               className="w-10 h-10 object-contain rounded-md"
             />
             <div className="hidden sm:flex flex-col leading-none">
-              <span className="text-sm font-semibold text-black">
+              <span className="text-sm font-serif text-black">
                 Techazura
               </span>
               <span className="text-xs text-gray-600 -mt-0.5">
                 CSE Symposium 2026
               </span>
             </div>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6" aria-label="Main navigation">
             {navLinks.map((link) => {
-              const isActive = active === link.href;
+              const isActive = link.isRoute
+                ? location.pathname === link.href
+                : active === link.href;
+
+              if (link.isRoute) {
+                return (
+                  <Link
+                    key={link.href}
+                    to={link.href}
+                    onClick={() => {
+                      setActive("");
+                      setIsMenuOpen(false);
+                    }}
+                    className={`relative inline-block px-2 py-1 font-medium transition-all duration-200 ${isActive
+                        ? "text-black"
+                        : "text-gray-700 hover:text-black"
+                      } group`}
+                  >
+                    <span className="block transition-transform duration-200 group-hover:-translate-y-0.5">
+                      {link.label}
+                    </span>
+                    <span
+                      className={`absolute left-1/2 bottom-0 h-0.5 rounded bg-teal-600 transition-all duration-300 transform -translate-x-1/2 ${isActive ? "w-full" : "w-0 group-hover:w-full"
+                        }`}
+                    />
+                  </Link>
+                );
+              }
 
               return (
                 <a
@@ -97,11 +125,10 @@ const Header: React.FC = () => {
                     setActive(link.href);
                     setIsMenuOpen(false);
                   }}
-                  className={`relative inline-block px-2 py-1 font-medium transition-all duration-200 ${
-                    isActive
+                  className={`relative inline-block px-2 py-1 font-medium transition-all duration-200 ${isActive
                       ? "text-black"
                       : "text-gray-700 hover:text-black"
-                  } group`}
+                    } group`}
                 >
                   <span className="block transition-transform duration-200 group-hover:-translate-y-0.5">
                     {link.label}
@@ -109,9 +136,8 @@ const Header: React.FC = () => {
 
                   {/* Hover underline */}
                   <span
-                    className={`absolute left-1/2 bottom-0 h-0.5 rounded bg-teal-600 transition-all duration-300 transform -translate-x-1/2 ${
-                      isActive ? "w-full" : "w-0 group-hover:w-full"
-                    }`}
+                    className={`absolute left-1/2 bottom-0 h-0.5 rounded bg-teal-600 transition-all duration-300 transform -translate-x-1/2 ${isActive ? "w-full" : "w-0 group-hover:w-full"
+                      }`}
                   />
                 </a>
               );
@@ -120,12 +146,8 @@ const Header: React.FC = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="outline" size="sm" asChild>
-              <a href="#events">View Events</a>
-            </Button>
-
             <Button variant="cta" size="sm" asChild>
-              <a href="#events">Register Now</a>
+              <Link to="/events">Register Now</Link>
             </Button>
           </div>
 
@@ -150,39 +172,52 @@ const Header: React.FC = () => {
         {/* Mobile Menu */}
         <div
           ref={menuRef}
-          className={`md:hidden transform origin-top transition-all duration-300 ${
-            isMenuOpen
+          className={`md:hidden transform origin-top transition-all duration-300 ${isMenuOpen
               ? "max-h-screen opacity-100"
               : "max-h-0 opacity-0 pointer-events-none"
-          } overflow-hidden`}
+            } overflow-hidden`}
         >
           <nav className="py-4 border-t border-gray-200" aria-label="Mobile navigation">
             <div className="flex flex-col gap-2 px-2">
               {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => {
-                    setActive(link.href);
-                    setIsMenuOpen(false);
-                  }}
-                  className="px-4 py-3 rounded-lg text-black hover:bg-gray-100 transition-colors"
-                >
-                  {link.label}
-                </a>
+                link.isRoute ? (
+                  <Link
+                    key={link.href}
+                    to={link.href}
+                    onClick={() => {
+                      setActive("");
+                      setIsMenuOpen(false);
+                    }}
+                    className="px-4 py-3 rounded-lg text-black hover:bg-gray-100 transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => {
+                      setActive(link.href);
+                      setIsMenuOpen(false);
+                    }}
+                    className="px-4 py-3 rounded-lg text-black hover:bg-gray-100 transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                )
               ))}
 
               <div className="flex flex-col gap-3 mt-4 px-2">
                 <Button variant="outline" asChild>
-                  <a href="#events" onClick={() => setIsMenuOpen(false)}>
+                  <Link to="/events" onClick={() => setIsMenuOpen(false)}>
                     View Events
-                  </a>
+                  </Link>
                 </Button>
 
                 <Button variant="cta" asChild>
-                  <a href="#register" onClick={() => setIsMenuOpen(false)}>
+                  <Link to="/events" onClick={() => setIsMenuOpen(false)}>
                     Register Now
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </div>

@@ -1,14 +1,15 @@
 import { Download, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import SocialLinks from '@/components/SocialLinks';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { label: 'Events', href: '#events' },
-    { label: 'Register', href: '#register' },
-    { label: 'FAQ', href: '#faq' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Home', href: '/', isRoute: true },
+    { label: 'Events', href: '/events', isRoute: true },
+    { label: 'FAQ', href: '/faq', isRoute: true },
+    { label: 'Contact', href: '#contact', isRoute: false },
   ];
 
   const legalLinks = [
@@ -42,12 +43,21 @@ const Footer = () => {
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.href}>
-                  <a
-                    href={link.href}
-                    className="text-background/70 hover:text-background transition-colors text-sm focus-ring rounded"
-                  >
-                    {link.label}
-                  </a>
+                  {link.isRoute ? (
+                    <Link
+                      to={link.href}
+                      className="text-background/70 hover:text-background transition-colors text-sm focus-ring rounded"
+                    >
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <a
+                      href={link.href}
+                      className="text-background/70 hover:text-background transition-colors text-sm focus-ring rounded"
+                    >
+                      {link.label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>

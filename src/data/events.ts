@@ -50,65 +50,29 @@ export const events: Event[] = [
     subEvents: ['Debugging', 'Blind fold coding', 'UI/UX Design', 'AI Development', 'Paper Presentation', 'Meme Mania', 'Treasure Hunt']
   },
   {
-    id: 'tech',
-    name: 'Tech',
-    description: 'Access to one technical events',
-    fullDescription: 'Dive into the world of technology with our tech-only pass. Compete in coding challenges, debug complex problems, and showcase your technical prowess.',
+    id: 'free-fire',
+    name: 'Free Fire Tournament',
+    description: 'Battle Royale gaming tournament - Squad only!',
+    fullDescription: 'Get ready for an intense Free Fire battle! Form your squad of 4 and compete against other teams in this thrilling mobile gaming tournament. Strategy, teamwork, and quick reflexes will determine the ultimate champions.',
     price: 150,
     category: 'Tech',
-    icon: 'Code2',
-    teamSize: 'Individual or Team (2-3)',
-    rules: [
-      'Participants must bring their own laptops',
-      'Internet access will be provided',
-      'Use of AI tools may be restricted in some events',
-      'Decisions of judges are final'
-    ],
-    paymentLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfmud-FEhMM8xuqy-Nosoqg4SNal6c2VGhYD4nqcDAynqmCqQ/viewform?usp=publish-editor',
-    subEvents: ['Debugging', 'Blind fold coding', 'Designing UI/UX or AI driven development', 'Paper presentation', 'Workshop']
-  },
-  {
-    id: 'nontech',
-    name: 'Non Tech',
-    description: 'Access to one non-technical events',
-    fullDescription: 'Not just about code! Join our exciting non-technical events featuring creative challenges, treasure hunts, and fun competitions that test your wit and creativity.',
-    price: 150,
-    category: 'Non-Tech',
     icon: 'Gamepad2',
-    teamSize: 'Individual or Team',
+    teamSize: 'Squad of 4 (No individuals)',
     rules: [
-      'Team size varies per event',
-      'Props and materials will be provided',
-      'Participants must follow event-specific guidelines',
-      'Time limits are strictly enforced'
+      'Team must consist of exactly 4 members',
+      'No individual entries allowed',
+      'Players must use their own devices',
+      'Fair play policy strictly enforced',
+      'Tournament format: Battle Royale elimination'
     ],
-    paymentLink: 'https://docs.google.com/forms/d/e/1FAIpQLSc7-w1UtKp_KYFY3mgrHwQlrjvX28vveFrb3bAIl1KJjU75GA/viewform?usp=publish-editor',
-    subEvents: ['Meme mania', 'Treasure hunt', 'Dance competition']
-  },
-  {
-    id: 'dance',
-    name: 'Dance Competition',
-    description: 'Showcase your moves in our grand dance battle',
-    fullDescription: 'Light up the stage with your dance moves! Solo or group performances welcome. Multiple genres accepted including classical, western, hip-hop, and fusion.',
-    price: 999,
-    category: 'Non-Tech',
-    icon: 'Music',
-    teamSize: 'Group (2-10)',
-    rules: [
-      'Performance time: 3-5 minutes',
-      'Music must be submitted 2 days prior',
-      'Props allowed but must be self-arranged',
-      'Obscene gestures or costumes not permitted',
-      'Original choreography encouraged'
-    ],
-    paymentLink: 'https://docs.google.com/forms/d/e/1FAIpQLScuCgdT-GWTb4m0LXWg2eEiEaZoEurZ3ReZPRKCIHUADzFlWg/viewform?usp=publish-editor'
+    paymentLink: 'https://docs.google.com/forms/d/e/1FAIpQLSc7-w1UtKp_KYFY3mgrHwQlrjvX28vveFrb3bAIl1KJjU75GA/viewform?usp=publish-editor'
   },
   {
     id: 'paper',
     name: 'Paper Presentation',
     description: 'Present your research and innovative ideas',
     fullDescription: 'Present your research papers and innovative project ideas to a panel of expert judges. Topics can range from emerging technologies to social impact projects.',
-    price: 399,
+    price: 499,
     category: 'Tech',
     icon: 'FileText',
     teamSize: 'Individual or Team (2-3)',
@@ -122,6 +86,3 @@ export const events: Event[] = [
     paymentLink: 'https://docs.google.com/forms/d/e/1FAIpQLSc6nk-8lgnrX_VkQo0qb8KM98CHBUnxQxXC6HZfYqEfj9ru3g/viewform?usp=publish-editor'
   }
 ];
-
-export const techEvents = ['Debugging', 'Blind fold coding', 'Designing UI/UX or AI driven development', 'Paper presentation', 'Workshop'];
-export const nonTechEvents = ['Meme mania', 'Treasure hunt', 'Dance competition'];

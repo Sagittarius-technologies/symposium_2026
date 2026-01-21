@@ -3,6 +3,7 @@ import { Calendar, MapPin, Users, Cpu, Monitor, Laptop, Cloud, Code, ChevronLeft
 import { Button } from "@/components/ui/button";
 import CountdownTimer from "@/components/CountdownTimer";
 import SocialLinks from "@/components/SocialLinks";
+import TextPressure from "@/components/ui/TextPressure";
 
 const Hero: React.FC = () => {
   const eventDate = new Date("2026-02-27T09:00:00");
@@ -73,9 +74,26 @@ const Hero: React.FC = () => {
             </div>
 
             {/* EVENT NAME VERY LARGE (TECHAZURA FONT STYLE UNCHANGED) */}
-            <h1 className="text-5xl sm:text-6xl md:text-7xl tracking-widest mb-3 font-bangers drop-shadow-[0_6px_20px_rgba(0,0,0,0.6)]">
-  Techazura <span className="text-[#0EA5A4]">2026</span>
-</h1>
+            <div className="mb-3">
+              <div className="flex items-baseline gap-4">
+                <div className="relative" style={{ height: '80px' }}>
+                  <TextPressure
+                    text="Techazura"
+                    flex
+                    alpha={false}
+                    stroke={false}
+                    width
+                    weight
+                    italic
+                    textColor="#ffffff"
+                    strokeColor="#0EA5A4"
+                    minFontSize={48}
+                    className="text-5xl sm:text-6xl md:text-7xl tracking-widest font-bangers drop-shadow-[0_6px_20px_rgba(0,0,0,0.6)]"
+                  />
+                </div>
+                <span className="text-5xl sm:text-6xl md:text-7xl tracking-widest font-bangers drop-shadow-[0_6px_20px_rgba(0,0,0,0.6)] text-[#0EA5A4]">2026</span>
+              </div>
+            </div>
 
 
             <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-6 max-w-xl">
@@ -116,15 +134,6 @@ const Hero: React.FC = () => {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-start mb-6">
-              <Button variant="cta" size="xl" asChild>
-                <a href="#events">Register Now</a>
-              </Button>
-
-              <Button variant="hero-outline" size="xl" asChild>
-                <a href="#events">View Events</a>
-              </Button>
-            </div>
 
             <div className="mt-4">
               <CountdownTimer targetDate={eventDate} />
