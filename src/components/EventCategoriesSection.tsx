@@ -279,7 +279,7 @@ const EventCategoriesSection = () => {
                 {/* View All Events Button */}
                 <div className="text-center mt-10">
                     <a
-                        href="/events"
+                        href="events"
                         className="inline-flex items-center gap-2 px-6 py-3 bg-[#F59E0B] hover:bg-[#D97706] text-black font-semibold rounded-lg transition-colors"
                     >
                         View All Events & Register
