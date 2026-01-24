@@ -81,31 +81,7 @@ const Footer = () => {
           </div>
 
           {/* Admin Section */}
-          <div>
-            <h4 className="font-semibold mb-4">Admin Tools</h4>
-            <ul className="space-y-3">
-              <li>
-                <a
-                  href="#"
-                  className="flex items-center gap-2 text-background/70 hover:text-background transition-colors text-sm focus-ring rounded"
-                >
-                  <Download className="w-4 h-4" />
-                  Download Registrations (CSV)
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://docs.google.com/spreadsheets"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-background/70 hover:text-background transition-colors text-sm focus-ring rounded"
-                >
-                  <ExternalLink className="w-4 h-4" />
-                  View Google Sheets
-                </a>
-              </li>
-            </ul>
-          </div>
+        
         </div>
 
         {/* Bottom Bar */}

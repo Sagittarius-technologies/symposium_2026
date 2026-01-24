@@ -53,14 +53,14 @@ export const events: Event[] = [
     id: 'free-fire',
     name: 'Free Fire Tournament',
     description: 'Battle Royale gaming tournament - Squad only!',
-    fullDescription: 'Get ready for an intense Free Fire battle! Form your squad of 4 and compete against other teams in this thrilling mobile gaming tournament. Strategy, teamwork, and quick reflexes will determine the ultimate champions.',
+    fullDescription: 'Get ready for an intense Free Fire battle! Join and  compete against other players in this thrilling mobile gaming tournament. Strategy, teamwork, and quick reflexes will determine the ultimate champions.',
     price: 150,
     category: 'Tech',
     icon: 'Gamepad2',
-    teamSize: 'Squad of 4 (No individuals)',
+    teamSize: 'Only individuals',
     rules: [
-      'Team must consist of exactly 4 members',
-      'No individual entries allowed',
+      'No team entries allowed',
+      'Only individual entries allowed',
       'Players must use their own devices',
       'Fair play policy strictly enforced',
       'Tournament format: Battle Royale elimination'
