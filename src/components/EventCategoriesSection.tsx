@@ -46,7 +46,7 @@ const techEvents: EventItem[] = [
         id: 'project-presentation',
         name: 'Paper Presentation',
         description: 'Present academic or real-time projects to judges.',
-        teamSize: 'Maximum 4 members',
+        teamSize: 'Maximum 3 members',
         prizes: { first: 1500, second: 1000, third: 500 },
     },
 ];
@@ -78,7 +78,7 @@ const nonTechEvents: EventItem[] = [
         id: 'free-fire',
         name: 'Free Fire Tournament',
         description: 'Battle Royale gaming tournament. Form your squad and compete for glory!',
-        teamSize: 'Squad of 4 only',
+        teamSize: 'Individual only',
         prizes: { first: 1000, second: 700, third: 500 },
     },
 ];
