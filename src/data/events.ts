@@ -28,7 +28,7 @@ export const events: Event[] = [
       'Workshop materials will be provided',
       'Certificate of participation will be issued'
     ],
-    paymentLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfrNLgUTZumDPrj6PB7KupCw_-tSBmkax8WVefIBGRTqD5nhw/viewform?embedded=true',
+    paymentLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfrNLgUTZumDPrj6PB7KupCw_-tSBmkax8WVefIBGRTqD5nhw/viewform?usp=dialog',
     subEvents: ['AI/ML Workshop', 'Web Development', 'Cloud Computing']
   },
   {
