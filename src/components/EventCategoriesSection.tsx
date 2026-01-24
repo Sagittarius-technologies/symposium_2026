@@ -3,6 +3,7 @@ import { ChevronLeft, ChevronRight, Code, Gamepad2, Laptop, Trophy } from 'lucid
 import GlareHover from '@/components/ui/GlareHover';
 import MagicCard from '@/components/ui/MagicCard';
 import EventsSection from './EventsSection';
+import { Link } from "react-router-dom";
 
 interface PrizePool {
     first: number;
@@ -279,12 +280,12 @@ const EventCategoriesSection = () => {
 
                 {/* View All Events Button */}
                 <div className="text-center mt-10">
-                    <a
-                        href="/events"
+                    <Link
+                        to="/events"
                         className="inline-flex items-center gap-2 px-6 py-3 bg-[#F59E0B] hover:bg-[#D97706] text-black font-semibold rounded-lg transition-colors"
                     >
                         View All Events & Register
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>
