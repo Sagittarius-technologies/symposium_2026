@@ -48,12 +48,15 @@ const CountdownTimer = ({ targetDate }: CountdownTimerProps) => {
         {timeBlocks.map((block) => (
           <div
             key={block.label}
-            className="flex flex-col items-center bg-orange-500 backdrop-blur-sm rounded-lg p-3 md:p-4 min-w-[60px] md:min-w-[80px] border border-primary-foreground/20"
+            className="gradient-secondary flex shrink-0 flex-col items-center justify-center rounded-lg p-2 w-16 h-16 md:w-28 md:h-28 shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-105 active:scale-95 active:brightness-90 cursor-pointer select-none"
+            onClick={() => {
+              // Optional: Add specific click logic here if needed
+            }}
           >
-            <span className="text-2xl md:text-4xl font-bold text-primary-foreground tabular-nums">
+            <span className="text-lg md:text-3xl font-bold text-white tabular-nums leading-none">
               {block.value.toString().padStart(2, '0')}
             </span>
-            <span className="text-xs md:text-sm text-primary-foreground/70 uppercase tracking-wide mt-1">
+            <span className="text-[9px] md:text-xs text-white/90 uppercase tracking-wide mt-1 font-semibold">
               {block.label}
             </span>
           </div>
