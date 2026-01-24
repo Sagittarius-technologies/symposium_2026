@@ -92,7 +92,7 @@ const Hero: React.FC = () => {
           strokeColor="#0EA5A4"
           minFontSize={34}   // reduced for mobile
           className="
-            text-[42px] sm:text-6xl md:text-7xl
+            text-[28px] sm:text-4xl md:text-6xl
             tracking-wider sm:tracking-widest
             font-bangers
             drop-shadow-[0_6px_20px_rgba(0,0,0,0.6)]
@@ -108,7 +108,7 @@ const Hero: React.FC = () => {
     <div className="flex justify-center sm:justify-start">
       <span
         className="
-          text-[38px] sm:text-6xl md:text-7xl
+          text-[35px] sm:text-5xl md:text-6xl
           tracking-wider sm:tracking-widest
           font-bangers
           drop-shadow-[0_6px_20px_rgba(0,0,0,0.6)]
