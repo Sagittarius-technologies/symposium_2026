@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ChevronLeft, ChevronRight, Code, Gamepad2, Laptop, Trophy } from 'lucide-react';
 import GlareHover from '@/components/ui/GlareHover';
 import MagicCard from '@/components/ui/MagicCard';
+import EventsSection from './EventsSection';
 
 interface PrizePool {
     first: number;
