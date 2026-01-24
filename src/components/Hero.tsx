@@ -73,27 +73,56 @@ const Hero: React.FC = () => {
               </div>
             </div>
 
-            {/* EVENT NAME VERY LARGE (TECHAZURA FONT STYLE UNCHANGED) */}
-            <div className="mb-3">
-              <div className="flex items-baseline gap-4">
-                <div className="relative" style={{ height: '80px' }}>
-                  <TextPressure
-                    text="Techazura"
-                    flex
-                    alpha={false}
-                    stroke={false}
-                    width
-                    weight
-                    italic
-                    textColor="#ffffff"
-                    strokeColor="#0EA5A4"
-                    minFontSize={48}
-                    className="text-5xl sm:text-6xl md:text-7xl tracking-widest font-bangers drop-shadow-[0_6px_20px_rgba(0,0,0,0.6)]"
-                  />
-                </div>
-                <span className="text-5xl sm:text-6xl md:text-7xl tracking-widest font-bangers drop-shadow-[0_6px_20px_rgba(0,0,0,0.6)] text-[#0EA5A4]">2026</span>
-              </div>
-            </div>
+           {/* EVENT NAME VERY LARGE (TECHAZURA FONT STYLE UNCHANGED) */}
+<div className="mb-3">
+  <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
+    
+    {/* Techazura */}
+    <div className="relative w-full sm:w-auto flex justify-center sm:justify-start">
+      <div className="relative h-[60px] sm:h-[80px]">
+        <TextPressure
+          text="Techazura"
+          flex
+          alpha={false}
+          stroke={false}
+          width
+          weight
+          italic
+          textColor="#ffffff"
+          strokeColor="#0EA5A4"
+          minFontSize={34}   // reduced for mobile
+          className="
+            text-[42px] sm:text-6xl md:text-7xl
+            tracking-wider sm:tracking-widest
+            font-bangers
+            drop-shadow-[0_6px_20px_rgba(0,0,0,0.6)]
+            text-center sm:text-left
+            leading-none
+            whitespace-nowrap
+          "
+        />
+      </div>
+    </div>
+
+    {/* 2026 */}
+    <div className="flex justify-center sm:justify-start">
+      <span
+        className="
+          text-[38px] sm:text-6xl md:text-7xl
+          tracking-wider sm:tracking-widest
+          font-bangers
+          drop-shadow-[0_6px_20px_rgba(0,0,0,0.6)]
+          text-[#0EA5A4]
+          leading-none
+        "
+      >
+        2026
+      </span>
+    </div>
+
+  </div>
+</div>
+
 
 
             <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-6 max-w-xl">
@@ -101,7 +130,7 @@ const Hero: React.FC = () => {
             </p>
 
             {/* STATIC CSE THEMED ICONS */}
-            <div className="flex items-center gap-4 mb-6" aria-hidden>
+            <div className="flex items-center gap-4 mb-6 " aria-hidden>
               <div className="single-icon-wrap">
                 <Cpu className="single-lucide-icon" />
               </div>
