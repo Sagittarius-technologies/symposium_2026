@@ -52,7 +52,7 @@ export const events: Event[] = [
   {
     id: 'free-fire',
     name: 'Free Fire Tournament',
-    description: 'Battle Royale gaming tournament - Squad only!',
+    description: 'Battle Royale gaming tournament - Solo only!',
     fullDescription: 'Get ready for an intense Free Fire battle! Join and  compete against other players in this thrilling mobile gaming tournament. Strategy, teamwork, and quick reflexes will determine the ultimate champions.',
     price: 150,
     category: 'Tech',
