@@ -65,7 +65,7 @@ export const events: Event[] = [
       'Fair play policy strictly enforced',
       'Tournament format: Battle Royale elimination'
     ],
-    paymentLink: 'https://docs.google.com/forms/d/e/1FAIpQLSc7-w1UtKp_KYFY3mgrHwQlrjvX28vveFrb3bAIl1KJjU75GA/viewform?usp=publish-editor'
+    paymentLink: 'https://docs.google.com/forms/d/e/1FAIpQLScuCgdT-GWTb4m0LXWg2eEiEaZoEurZ3ReZPRKCIHUADzFlWg/viewform?usp=dialog'
   },
   {
     id: 'paper',
