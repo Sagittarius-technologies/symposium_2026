@@ -31,6 +31,18 @@ const organizers = [
     phone: '+91 84284 90019',
     email: '720723104022@hicet.ac.in',
   },
+  {
+    name: 'Kavin',
+    role: 'Student Coordinator',
+    phone: '+91 93637 55118',
+    email: '720723104079@hicet.ac.in'
+  },
+  {
+    name: 'Saran',
+    role: 'Student Coordinator',
+    phone: '+91 63793 63796',
+    email: '720723104138@hicet.ac.in'
+  },
 ];
 
 const ContactSection = () => {
