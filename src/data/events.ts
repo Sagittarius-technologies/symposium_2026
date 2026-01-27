@@ -18,7 +18,7 @@ export const events: Event[] = [
     name: 'Workshop',
     description: 'Hands-on technical workshop with industry experts',
     fullDescription: 'Join our intensive hands-on workshop led by industry professionals. Learn cutting-edge technologies, best practices, and gain practical experience that you can apply immediately in your projects.',
-    price: 250,
+    price: 200,
     category: 'Tech',
     icon: 'Laptop',
     teamSize: 'Individual',
@@ -48,24 +48,6 @@ export const events: Event[] = [
     ],
     paymentLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdnHXpPIdIN6Kof6u-pRr5pKczWXoSVUx1t5f39bmQiNFpwlw/viewform?usp=publish-editor',
     subEvents: ['Debugging', 'Blind fold coding', 'UI/UX Design', 'AI Development', 'Paper Presentation', 'Meme Mania', 'Treasure Hunt']
-  },
-  {
-    id: 'free-fire',
-    name: 'Free Fire Tournament',
-    description: 'Battle Royale gaming tournament - Solo only!',
-    fullDescription: 'Get ready for an intense Free Fire battle! Join and  compete against other players in this thrilling mobile gaming tournament. Strategy, teamwork, and quick reflexes will determine the ultimate champions.',
-    price: 150,
-    category: 'Tech',
-    icon: 'Gamepad2',
-    teamSize: 'Only individuals',
-    rules: [
-      'No team entries allowed',
-      'Only individual entries allowed',
-      'Players must use their own devices',
-      'Fair play policy strictly enforced',
-      'Tournament format: Battle Royale elimination'
-    ],
-    paymentLink: 'https://docs.google.com/forms/d/e/1FAIpQLScuCgdT-GWTb4m0LXWg2eEiEaZoEurZ3ReZPRKCIHUADzFlWg/viewform?usp=dialog'
   },
   {
     id: 'paper',

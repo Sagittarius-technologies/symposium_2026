@@ -74,13 +74,6 @@ const nonTechEvents: EventItem[] = [
         teamSize: 'Individual / Team',
         prizes: { first: 1000, second: 700, third: 500 },
     },
-    {
-        id: 'free-fire',
-        name: 'Free Fire Tournament',
-        description: 'Battle Royale gaming tournament. Join and compete for glory!',
-        teamSize: 'Individual only',
-        prizes: { first: 1000, second: 700, third: 500 },
-    },
 ];
 
 // Workshop

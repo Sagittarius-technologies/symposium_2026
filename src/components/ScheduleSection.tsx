@@ -105,17 +105,6 @@ const scheduleEvents: ScheduleEvent[] = [
         venue: 'Campus',
     },
     {
-        id: 'free-fire',
-        name: 'Free Fire Tournament',
-        description: 'Battle Royale gaming tournament. Join and compete for glory!',
-        teamSize: 'Solo only',
-        price: 150,
-        time: '13:30',
-        endTime: '14:30',
-        category: 'non-technical',
-        venue: 'Gaming Zone',
-    },
-    {
         id: 'sight-on-site',
         name: 'Sight on Site',
         description: 'On-the-spot problem solving and implementation challenge.',
