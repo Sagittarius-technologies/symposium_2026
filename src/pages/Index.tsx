@@ -5,11 +5,14 @@ import ScheduleSection from '@/components/ScheduleSection';
 import RegistrationSection from '@/components/RegistrationSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import { Scroll } from 'lucide-react';
+import ScrollingTicker from '@/components/ScrollingAnimation';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
+        <ScrollingTicker />
       <main>
         <Hero />
         <EventCategoriesSection />

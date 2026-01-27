@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
 
   return (
     // Reduced top padding so hero is closer to header
-    <section className="relative min-h-screen flex items-center overflow-hidden pt-8 md:pt-12 bg-gradient-to-b from-[#071133] via-[#071a45] to-[#06112b] text-white mb-2.5">
+    <section className="relative min-h-screen flex items-center overflow-hidden pt-0 md:pt-0 bg-gradient-to-b from-[#071133] via-[#071a45] to-[#06112b] text-white mb-2.5">
       {/* Reduced container vertical padding */}
       <div className="container mx-auto px-6 py-8 md:py-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
