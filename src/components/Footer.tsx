@@ -9,7 +9,7 @@ const Footer = () => {
     { label: 'Home', href: '/', isRoute: true },
     { label: 'Events', href: '/events', isRoute: true },
     { label: 'FAQ', href: '/faq', isRoute: true },
-    { label: 'Contact', href: '/#contact', isRoute: false },
+    { label: 'Contact', href: '/contact', isRoute: false },
   ];
 
   const legalLinks = [
