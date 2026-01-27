@@ -47,7 +47,7 @@ export const events: Event[] = [
       'ID card is mandatory for entry'
     ],
     paymentLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdnHXpPIdIN6Kof6u-pRr5pKczWXoSVUx1t5f39bmQiNFpwlw/viewform?usp=publish-editor',
-    subEvents: ['Debugging', 'Blind fold coding', 'UI/UX Design', 'AI Development', 'Paper Presentation', 'Meme Mania', 'Treasure Hunt']
+    subEvents: ['Debugging', 'Blind fold coding', 'Sight on site', 'AI Web Craft',  'Meme Mania', 'Treasure Hunt','Technical Quiz','Free Fire Tournament']
   },
   {
     id: 'paper',
@@ -57,7 +57,7 @@ export const events: Event[] = [
     price: 499,
     category: 'Tech',
     icon: 'FileText',
-    teamSize: 'Individual or Team (2-3)',
+    teamSize: ' Team of 4',
     rules: [
       'Abstract submission deadline: 1 week before event',
       'Presentation time: 8-10 minutes + Q&A',

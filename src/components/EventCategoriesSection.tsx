@@ -61,6 +61,13 @@ const nonTechEvents: EventItem[] = [
         prizes: { first: 1000, second: 700, third: 500 },
     },
     {
+        id: 'free-fire',
+        name: 'Free Fire Tournament',
+        description: 'Competitive gaming tournament in Free Fire.',
+        teamSize: 'Individual',
+        prizes: { first: 1000, second: 700, third: 500 },
+    },
+    {
         id: 'treasure-hunt',
         name: 'Treasure Hunt + Quiz',
         description: 'Clue-based hunt combined with technical quiz rounds.',

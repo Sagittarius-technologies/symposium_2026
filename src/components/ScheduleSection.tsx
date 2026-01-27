@@ -94,6 +94,17 @@ const scheduleEvents: ScheduleEvent[] = [
         venue: 'Room 101',
     },
     {
+        id: 'free-fire',
+        name: 'Free Fire Tournament',
+        description: 'Competitive gaming tournament in Free Fire.',
+        teamSize: 'Individual',
+        price: 150,
+        time: '13:30',
+        endTime: '15:30',
+        category: 'non-technical',
+        venue: 'Room 102',
+    },
+    {
         id: 'treasure-hunt',
         name: 'Treasure Hunt + Technical Quiz',
         description: 'Clue-based hunt combined with technical quiz rounds.',
