@@ -27,6 +27,17 @@ const scheduleEvents: ScheduleEvent[] = [
         venue: 'Lab 1',
     },
     {
+        id: 'innaguration',
+        name: 'Inauguration',
+        description: 'Official opening ceremony with keynote speeches and event overview.',
+        teamSize: 'N/A',
+        price: 0,
+        time: '9:00',
+        endTime: '10:00',
+        category: 'technical',
+        venue: 'Kalam Auditorium',
+    },
+    {
         id: 'blindfold-coding',
         name: 'Blind Fold Coding',
         description: 'One participant codes while blindfolded based on teammate instructions.',
@@ -52,7 +63,7 @@ const scheduleEvents: ScheduleEvent[] = [
         id: 'project-presentation',
         name: 'Project Presentation',
         description: 'Present academic or real-time projects to judges.',
-        teamSize: 'Maximum 4 members',
+        teamSize: 'Maximum 3 members',
         price: 499,
         time: '10:30',
         endTime: '12:30',
@@ -96,12 +107,12 @@ const scheduleEvents: ScheduleEvent[] = [
     {
         id: 'free-fire',
         name: 'Free Fire Tournament',
-        description: 'Battle Royale gaming tournament. Form your squad of 4 and compete for glory!',
-        teamSize: 'Squad of 4 only',
+        description: 'Battle Royale gaming tournament. Join and compete for glory!',
+        teamSize: 'Solo only',
         price: 150,
         time: '13:30',
         endTime: '14:30',
-        category: 'technical',
+        category: 'non-technical',
         venue: 'Gaming Zone',
     },
     {
@@ -119,7 +130,7 @@ const scheduleEvents: ScheduleEvent[] = [
 
 // Time slots for the clock
 const timeSlots = [
-    { hour: 10, label: '10:00 AM', period: 'morning' },
+    { hour: 9, label: '9:00 AM', period: 'morning' },
     { hour: 10.5, label: '10:30 AM', period: 'morning' },
     { hour: 11, label: '11:00 AM', period: 'morning' },
     { hour: 11.5, label: '11:30 AM', period: 'morning' },
@@ -334,9 +345,9 @@ const ScheduleSection = () => {
                                                 >
                                                     {event.category}
                                                 </span>
-                                                <span className="text-[#F59E0B] font-bold text-sm">
+                                                {/* <span className="text-[#F59E0B] font-bold text-sm">
                                                     ₹{event.price}
-                                                </span>
+                                                </span> */}
                                             </div>
                                             <h4 className="text-white font-semibold text-lg mb-1">
                                                 {event.name}

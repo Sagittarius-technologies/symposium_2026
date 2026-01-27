@@ -103,9 +103,36 @@ const Hero: React.FC = () => {
         />
       </div>
     </div>
+    {/* Techazura */}
+    <div className="relative w-full sm:w-auto flex justify-center sm:justify-start">
+      <div className="relative h-[60px] sm:h-[80px]">
+        <TextPressure
+          text="2026"
+          flex
+          alpha={false}
+          stroke={false}
+          width
+          weight
+          italic
+          textColor="#0EA5A4"
+          strokeColor="#0EA5A4"
+          minFontSize={44}   // reduced for mobile
+          className="
+            text-[48px] sm:text-4xl md:text-6xl
+            tracking-wider sm:tracking-widest
+            font-bangers
+            drop-shadow-[0_6px_20px_rgba(0,0,0,0.6)]
+            text-center sm:text-left
+            text-[#0EA5A4]
+            leading-none
+            whitespace-nowrap
+          "
+        />
+      </div>
+    </div>
 
     {/* 2026 */}
-    <div className="flex justify-center sm:justify-start">
+    {/* <div className="flex justify-center sm:justify-start">
       <span
         className="
           text-[35px] sm:text-5xl md:text-6xl
@@ -118,7 +145,7 @@ const Hero: React.FC = () => {
       >
         2026
       </span>
-    </div>
+    </div> */}
 
   </div>
 </div>

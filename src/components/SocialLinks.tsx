@@ -6,10 +6,10 @@ interface SocialLinksProps {
 
 const SocialLinks = ({ variant = 'default' }: SocialLinksProps) => {
   const links = [
-    { icon: Instagram, href: 'https://instagram.com/csesymposium', label: 'Instagram' },
+    { icon: Instagram, href: 'https://www.instagram.com/hicet_cse?igsh=bW1tODA5ejJwMW05', label: 'Instagram' },
     { icon: Twitter, href: 'https://twitter.com/csesymposium', label: 'Twitter' },
     { icon: Linkedin, href: 'https://linkedin.com/company/csesymposium', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:brajinbrajin10@gmail.com', label: 'Email' },
+    { icon: Mail, href: 'mailto:techazura2026@gmail.com', label: 'Email' },
   ];
 
   const getStyles = () => {
