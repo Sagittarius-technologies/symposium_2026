@@ -29,10 +29,10 @@ const techEvents: EventItem[] = [
         prizes: { first: 1500, second: 1000, third: 500 },
     },
     {
-        id: 'blindfold-coding',
-        name: 'Blind Fold Coding',
-        description: 'One participant codes while blindfolded based on teammate instructions.',
-        teamSize: 'Team of 2',
+        id: 'quiz',
+        name: 'Technical Quiz',
+        description: 'Test your knowledge with a series of technical questions.',
+        teamSize: 'Individual',
         prizes: { first: 1500, second: 1000, third: 500 },
     },
     {
@@ -46,7 +46,7 @@ const techEvents: EventItem[] = [
         id: 'project-presentation',
         name: 'Paper Presentation',
         description: 'Present academic or real-time projects to judges.',
-        teamSize: 'Maximum 3 members',
+        teamSize: 'Maximum 4 members',
         prizes: { first: 1500, second: 1000, third: 500 },
     },
 ];
@@ -84,15 +84,15 @@ const nonTechEvents: EventItem[] = [
 ];
 
 // Workshop
-const workshopEvents: EventItem[] = [
-    {
-        id: 'workshop',
-        name: 'Workshop',
-        description: 'Hands-on workshop on trending technologies by industry experts.',
-        teamSize: 'Individual',
-        prizes: { first: 0, second: 0, third: 0 }, // No prizes for workshop
-    },
-];
+// const workshopEvents: EventItem[] = [
+//     {
+//         id: 'workshop',
+//         name: 'Workshop',
+//         description: 'Hands-on workshop on trending technologies by industry experts.',
+//         teamSize: 'Individual',
+//         prizes: { first: 0, second: 0, third: 0 }, // No prizes for workshop
+//     },
+// ];
 
 interface CategoryConfig {
     title: string;
@@ -123,15 +123,15 @@ const categoriesConfig: CategoryConfig[] = [
         borderColor: 'border-pink-200',
         icon: <Gamepad2 className="w-6 h-6 text-pink-600" />,
     },
-    {
-        title: 'Workshop',
-        badge: 'Workshop',
-        events: workshopEvents,
-        accentColor: 'text-green-600',
-        bgColor: 'bg-green-50',
-        borderColor: 'border-green-200',
-        icon: <Laptop className="w-6 h-6 text-green-600" />,
-    },
+    // {
+    //     title: 'Workshop',
+    //     badge: 'Workshop',
+    //     events: workshopEvents,
+    //     accentColor: 'text-green-600',
+    //     bgColor: 'bg-green-50',
+    //     borderColor: 'border-green-200',
+    //     icon: <Laptop className="w-6 h-6 text-green-600" />,
+    // },
 ];
 
 function EventCarouselCard({ config }: { config: CategoryConfig }) {
@@ -164,7 +164,7 @@ function EventCarouselCard({ config }: { config: CategoryConfig }) {
                 enableStars
                 spotlightRadius={400}
                 glowColor={title === 'Tech' ? '59, 130, 246' : title === 'Non-Tech' ? '236, 72, 153' : '34, 197, 94'}
-                className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 h-full flex flex-col"
+                className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 h-full flex flex-col w-full max-w-[420px] min-w-[420px] "
             >
             {/* Header with Icon and Badge */}
             <div className="flex items-start justify-between mb-5">
@@ -272,10 +272,12 @@ const EventCategoriesSection = () => {
                 </div>
 
                 {/* Three Column Layout */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className='flex justify-center mb-10'>
+                <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
                     {categoriesConfig.map((config) => (
                         <EventCarouselCard key={config.title} config={config} />
                     ))}
+                </div>
                 </div>
 
                 {/* View All Events Button */}
