@@ -164,7 +164,8 @@ function EventCarouselCard({ config }: { config: CategoryConfig }) {
                 enableStars
                 spotlightRadius={400}
                 glowColor={title === 'Tech' ? '59, 130, 246' : title === 'Non-Tech' ? '236, 72, 153' : '34, 197, 94'}
-                className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 h-full flex flex-col w-full max-w-[420px] min-w-[420px] "
+                className="bg-white rounded-2xl p-4 sm:p-6 shadow-lg border border-gray-100 h-full flex flex-col w-full sm:max-w-[420px] sm:min-w-[420px]"
+
             >
             {/* Header with Icon and Badge */}
             <div className="flex items-start justify-between mb-5">
