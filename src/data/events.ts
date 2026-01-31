@@ -33,9 +33,9 @@ export const events: Event[] = [
   // },
   {
     id: 'tech-nontech',
-    name: 'Tech + Non Tech',
-    description: 'Access to one tech and one non-tech events',
-    fullDescription: 'Get the complete symposium experience! This combo pass gives you access to all technical and non-technical events. Participate in coding challenges, creative competitions, and everything in between.',
+    name: 'Entry Pass',
+    description: 'Access to one tech and one non-tech events Limited number of paper presentation registration accepted',
+    fullDescription: 'Get the complete symposium experience! This combo pass gives you access to all technical and non-technical events. Participate in coding challenges, creative competitions, and everything in between. Limited number of paper presentation registration accepted',
     price: 250,
     category: 'Both',
     icon: 'Sparkles',
