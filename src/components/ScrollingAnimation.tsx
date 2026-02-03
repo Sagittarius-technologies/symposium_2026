@@ -7,11 +7,11 @@ const ScrollingTicker = () => {
       
       <motion.div
         className="flex whitespace-nowrap text-white py-3"
-        animate={{ x: ["0%", "-100%"] }}
+        animate={{ x: [0, -2000] }} 
         transition={{
           repeat: Infinity,
           repeatType: "loop",
-          duration: 20,
+          duration: 50,
           ease: "linear",
         }}
       >
@@ -19,11 +19,7 @@ const ScrollingTicker = () => {
         <div className="flex w-max">
           <TickerContent />
           <TickerContent />
-          <TickerContent />
-          <TickerContent />
-          <TickerContent />
-          <TickerContent />
-          <TickerContent />
+          
         </div>
       </motion.div>
     </div>
@@ -51,6 +47,14 @@ const TickerContent = () => (
     <span className="flex items-center gap-3 px-8">
       <Sparkles className="w-5 h-5 text-cyan-400" />
       <span className="font-bold tracking-widest">REGISTER NOW</span>
+      <Trophy className="w-5 h-5 text-cyan-400" />
+    </span>
+
+    <span className="mx-4 text-cyan-500/60">|</span>
+
+    <span className="flex items-center gap-3 px-8">
+      <Sparkles className="w-5 h-5 text-cyan-400" />
+      <span className="font-bold tracking-widest">LIMITED NUMBER OF REGISTRATIONS</span>
       <Trophy className="w-5 h-5 text-cyan-400" />
     </span>
 
