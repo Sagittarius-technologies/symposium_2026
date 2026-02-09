@@ -25,14 +25,14 @@ const techEvents: EventItem[] = [
         id: 'debugging',
         name: 'Debugging',
         description: 'Identify and correct errors in the given program within a limited time.',
-        teamSize: 'Individual',
+        teamSize: 'Team of 1 to 3',
         prizes: { first: 1500, second: 1000, third: 500 },
     },
     {
         id: 'quiz',
         name: 'Technical Quiz',
         description: 'Test your knowledge with a series of technical questions.',
-        teamSize: 'Individual',
+        teamSize: 'Team of 1 to 3',
         prizes: { first: 1500, second: 1000, third: 500 },
     },
     {
