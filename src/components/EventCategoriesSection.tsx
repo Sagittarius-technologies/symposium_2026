@@ -39,14 +39,14 @@ const techEvents: EventItem[] = [
         id: 'ai-dev',
         name: 'AI Web Craft',
         description: 'Develop a solution using AI tools within one hour.',
-        teamSize: 'Individual',
+        teamSize: 'Team of 1 to 3',
         prizes: { first: 1500, second: 1000, third: 500 },
     },
     {
         id: 'project-presentation',
         name: 'Paper Presentation',
         description: 'Present academic or real-time projects to judges.',
-        teamSize: 'Maximum 4 members',
+        teamSize: 'Team of 1 to 3',
         prizes: { first: 1500, second: 1000, third: 500 },
     },
 ];
@@ -57,7 +57,7 @@ const nonTechEvents: EventItem[] = [
         id: 'meme-mania',
         name: 'Meme Mania',
         description: 'Create or present memes based on given themes.',
-        teamSize: 'Individual',
+        teamSize: 'Team of 1 to 3',
         prizes: { first: 1000, second: 700, third: 500 },
     },
     {
@@ -71,14 +71,14 @@ const nonTechEvents: EventItem[] = [
         id: 'treasure-hunt',
         name: 'Treasure Hunt + Quiz',
         description: 'Clue-based hunt combined with technical quiz rounds.',
-        teamSize: 'Team of 2 to 4',
+        teamSize: 'Team of 1 to 3',
         prizes: { first: 1000, second: 700, third: 500 },
     },
     {
         id: 'sight-on-site',
         name: 'Sight on Site',
         description: 'On-the-spot problem solving and implementation challenge.',
-        teamSize: 'Individual / Team',
+        teamSize: 'Team of 1 to 3',
         prizes: { first: 1000, second: 700, third: 500 },
     },
 ];
