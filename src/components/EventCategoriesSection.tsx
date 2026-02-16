@@ -45,7 +45,7 @@ const techEvents: EventItem[] = [
     {
         id: 'project-presentation',
         name: 'Paper Presentation',
-        description: 'Present academic or real-time projects to judges.',
+        description: 'It involves presenting a research paper, project, or innovative concept to a panel of judges. ',
         teamSize: 'Team of 1 to 3',
         prizes: { first: 1500, second: 1000, third: 500 },
     },
