@@ -14,7 +14,7 @@ const Header: React.FC = () => {
     { href: "/", label: "Home", isRoute: true },
     { href: "/events", label: "Events", isRoute: true },
     { href: "/faq", label: "FAQ", isRoute: true },
-    { href: "#contact", label: "Contact", isRoute: false },
+    { href: "/contact", label: "Contact", isRoute: false },
   ];
 
   // Header shadow on scroll
