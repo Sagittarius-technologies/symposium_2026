@@ -6,7 +6,7 @@ import SocialLinks from "@/components/SocialLinks";
 import TextPressure from "@/components/ui/TextPressure";
 
 const Hero: React.FC = () => {
-  const eventDate = new Date("2026-02-27T09:00:00");
+  const eventDate = new Date("2026-02-26T15:00:00");
 
   const collegeLogoSrc = "/images/hicet.png";
   const collegeName = "Hindusthan College of Engineering and Technology";
