@@ -46,7 +46,7 @@ const TickerContent = () => (
 
     <span className="flex items-center gap-3 px-8">
       <Sparkles className="w-5 h-5 text-cyan-400" />
-      <span className="font-bold tracking-widest">REGISTER NOW</span>
+      <span className="font-bold tracking-widest">ONLINE REGISTER ENDED</span>
       <Trophy className="w-5 h-5 text-cyan-400" />
     </span>
 

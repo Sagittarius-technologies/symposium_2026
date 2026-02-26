@@ -80,13 +80,14 @@ const EventCard = ({ event, onViewDetails }: EventCardProps) => {
             <span className="text-xs text-muted-foreground block mt-0.5">{event.teamSize}</span>
           )}
         </div>
-        <Button
+        {/* <Button
           variant="default"
           onClick={() => onViewDetails(event)}
           aria-label={`View details for ${event.name}`}
         >
           Register
-        </Button>
+        </Button> */}
+        <p className="text-sm text-primary font-medium">Online Registration ended</p>
       </div>
     </article>
   );
